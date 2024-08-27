@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Página de Contato</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Interessado em nossos<br> preços comerciais?</h1>
+      <p>Preencha o formulário para ver os detalhes e entraremos <br>em contato o mais breve possível.</p>
+    </div>
+  </header>
+
+  <main>
+    <form>
+      <div class="container">
+        <div>
+          <label for="nome">Nome</label>
+          <input class="detalhes" type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+          <label for="tamanho">Tamanho da empresa</label>
+          <select class="detalhes" type="tamanho" id="tamanho" name="tamanho">
+            <option value="50">50 - 100 pessoas</option>
+            <option value="100">100 - 200 pessoas</option>
+            <option value="150">200 - 300 pessoas</option>
+            <option value="200">300 - 400 pessoas</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">E-mail da empresa</label>
+          <input class="detalhes" type="email" id="email" name="email" required placeholder="nome@email.com">
+
+          <label for="assunto">Assunto</label>
+          <select class="detalhes" type="assunto" id="assunto" name="assunto">
+            <option value="pagina">Crie páginas de destino</option>
+            <option value="site">Criar um site completo</option>
+          </select>
+        </div>
+
+        <div id="mensagem-box">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" placeholder="50-100 caracteres" cols="36%" rows="auto"></textarea>
+
+          <div id="btn-box">
+            <button>Contato de Vendas</button>
+          </div>
+        </div>
+    </form>
+  </main>
+</body>
+
+</html>
